@@ -304,7 +304,7 @@
 
 <!-- small screen -->
 <main class="Small">
-	<strong>Switch to Desktop, Laptop or Tablet. <br>Mobile Phone version not AVAILABLE</strong>
+	<strong>Switch to Desktop, Laptop or Tablet. <br><br><br> Mobile Phone version not AVAILABLE</strong>
 </main>
 
 <style>
