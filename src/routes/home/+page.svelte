@@ -21,7 +21,7 @@
     }
 </script>
 
-<main>
+<main class="Large-Screen">
 	<!-- Naigation Section -->
     <section class="Navigation-Section container-fluid fixed-top">
 		<div class="row Naivgation-Container">
@@ -112,7 +112,7 @@
 					
 				</div>
 				<div class="row Feed-Snippet-Interactions 	">
-					<div class="col-lg-3 Feed-Snippet-Like">
+					<div class="col-sm-3 Feed-Snippet-Like">
 						<button class="Like-Button" on:click={like}>
 							{#if liked}
 							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -127,17 +127,17 @@
 							<span class="Like-Counter"> {count}</span>
 						  </button>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-sm-3">
 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
 							<path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
 						  </svg>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-sm-3">
 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
 							<path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
 						  </svg>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-sm-3">
 						<svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" fill="currentColor" class="bi bi-bookmark-fill {saved ? 'saved' : 'unsaved'}" on:click={handleClick} viewBox="0 0 16 16">
 							<path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
 						  </svg>
@@ -342,7 +342,7 @@
 
 		}
 		.Navigation-Profile-Container img{
-			height: 100%;
+			height: 4rem;
 			border-radius: 100% ;
 
 		}
@@ -383,7 +383,7 @@
 
 		/* Feed */
 		.Feed-Container{
-			padding: 15rem 20rem 3rem;
+			padding: 15rem 5rem 3rem;
 		}
 		.Feed-Snippet-Container{
 			background-color: #1D2A44;
@@ -426,136 +426,10 @@
 
 	/* Phone screens */
 	@media screen and (max-width: 699px) {
-		p {
-			font-size: 1.2rem;
+		main.Large-Screen{
+			display: none;
 		}
-
-		/* Navigation */
-		.Navigation-Section {
-			padding: 1rem 3rem;
-			background-color: #121B2C;
-		}
-		.Naivgation-Container h4{
-			display: inline-block;
-		}
-
-		.Navigation-Switch-Container{
-			display: inline-block;
-			margin-left: 2rem;
-			padding: 1rem 1rem;
-			background-color: #0C121D;
-			border-radius: 2rem;
-		}
-		.Navigation-Switch-Button{
-			background-color: #0C121D;
-			border-color: #0C121D;
-			color: white;
-			border-radius: 2rem;
-			margin: 0 0.2rem;
-			padding-left: 1rem;
-			padding-right: 1rem;
-
-		}
-		.Navigation-Switch-Button.Active-Button{
-			background-color: #1D2A44;
-			color: white;
-		}
-
-		
-		.Navigation-Right-Container{
-			text-align: right;
-		}
-		.Navigation-Notification-Container{
-			display: inline-block;
-			margin-right: 2rem;
-			padding: 0.8rem;
-			border-radius: 100% ;
-			background-color: #1D2A44;
-		}
-		
-		.Navigation-Profile-Container{
-			display: inline-block;
-			height: 100%;
-
-		}
-		.Navigation-Profile-Container img{
-			height: 100%;
-			border-radius: 100% ;
-
-		}
-		.Navigation-Profile-Username{
-			display: inline-block;
-			margin-right:1rem;
-		}
-		.Navigation-Menu-Toggler{
-			display: inline-block;
-			margin-left: 2rem;
-			padding: 0.8rem;
-			border-radius: 0.5rem ;
-			background-color: #1D2A44;
-		}
-		.offcanvas{
-			background-color: #0C121D;
-			color:grey;
-			text-align: left;
-			font-size: 1.5rem;
-		}
-		.nav-item{
-			margin-bottom: 3rem;
-		}
-		.nav-item:hover{
-			background-color: #1D2A44;
-			border-radius: 2rem;
-			padding-left: 2rem;
-			color: white;		}
-		.nav-item svg{
-			margin-right: 1rem;
-		}
-		.nav-item.Active-Link{
-			background-color: #1D2A44;
-			border-radius: 2rem;
-			padding-left: 2rem;
-			color: white;
-		}
-
-		/* Feed */
-		.Feed-Container{
-			padding: 15rem 20rem 3rem;
-		}
-		.Feed-Snippet-Container{
-			background-color: #1D2A44;
-			border-radius: 2rem;
-			padding: 3rem;
-			margin-bottom: 4rem;
-		}
-		.Feed-Snippet-Heading-Container img{
-			width:7rem;
-			display: inline;
-			border-radius: 100%;
-			margin-bottom: 2rem;
-
-		}
-		.Feed-Snippet-Text-Container{
-			display: inline;
-			width: 8rem
-		}
-		.Feed-Snippet-Text-Container span{
-			color: grey;
-			font-size: 15px;
-		}
-		.Feed-Snippet-Title{
-			margin-bottom: 1rem;
-		}
-		.Feed-Snippet {
-			border-radius: 5rem;
-		}
-		.Feed-Snippet-Interactions{
-			margin-top: 3rem;
-			margin-bottom: 3rem;
-			text-align: center;
-
-		}
-        
+       
     }
 
 	/* General */
