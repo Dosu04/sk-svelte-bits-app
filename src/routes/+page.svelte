@@ -178,6 +178,29 @@
         </div>
         
     </section>
+
+    <!-- Join Section -->
+    <section class="Join-Section container-fluid">
+        <div class="row Join-Container">
+            <div class="col-lg-12 Join-Text-Container">
+                <h1>Join Our Community</h1> 
+                <p>Join the Svelte Bits community today and start contributing to and benefiting from the wealth of Svelte knowledge within the app.</p>
+                <br>
+                <a href="" class="btn btn-light Join-Buttons">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <p>&copy; Svelte Bits</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 </main>
 
 <style>
@@ -401,6 +424,24 @@
         .Dissemination-Container-Text .Left{
             text-align: left;
         }
+
+        /* Join */
+        .Join-Section{
+            padding: 5rem 8rem;
+        }
+
+        .Join-Text-Container{
+            text-align: center;
+            padding: 0rem;
+        }
+        
+        .Join-Buttons{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+
+
     }
 
 
@@ -617,6 +658,25 @@
         .Dissemination-Container-Text .Left{
             text-align: left;
         }
+    
+        /* Join */
+        .Join-Section{
+            padding: 5rem 4rem;
+        }
+        
+        .Join-Text-Container{
+            text-align: center;
+            padding: 0rem;
+        }
+
+        .Join-Buttons{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+       
+        
+        
+    
     }
 
 
@@ -830,6 +890,20 @@
             margin:1rem 0
         }
 
+        /* Join */
+        .Join-Container{
+            padding: 1rem 1rem;
+
+        }
+
+        .Join-Text-Container{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 0rem;
+        }
+        
+
+
     }
 
 
@@ -856,6 +930,17 @@
     .Navigation-Buttons-Container{
         padding: 0;
         text-align: right;
+    }
+
+    footer {
+    background-color: #9DDBAD;
+    padding: 20px 0;
+    color: black
+    }
+    
+    footer p {
+        margin-bottom: 0;
+        font-weight: 700;
     }
 
 </style>
