@@ -94,24 +94,24 @@
     <!-- Discover Section -->
     <section class="Discover-Section container-fluid">
         <div class="container Discover-Container">
-            <h2>Personal Collection</h2>
-            <p>Our app features a sleek, modern design that's easy on the eyes. With a focus on simple, intuitive navigation, SvelteBits allows you to quickly discover and share Svelte code snippets, all while enjoying the view.</p>
+            <h2>Search and Discover</h2>
+            <p>Find new and exciting Svelte code snippets with our powerful search tools. Browse by category or use our advanced search filters to find exactly what you’re looking for.</p>
 
             
             <div class="row Discover-Boxes-Container">
                 <div class="col Discover-Box">
-                    <h3>Organization</h3>
-                    <p>Keep your favorite snippets sorted and easy to find.</p>
+                    <h3>Browse</h3>
+                    <p>Browse code snippets by category for inspiration.</p>
             
                 </div>
                 <div class="col Discover-Box">
-                    <h3>Custom Folders</h3>
+                    <h3>Search Filters</h3>
                     <p>Create custom folders to better organize your snippets.</p>
             
                 </div>
                 <div class="col Discover-Box">
-                    <h3>Quick Access</h3>
-                    <p>Quickly access your favorites with just a few clicks.</p>
+                    <h3>Community Favorites</h3>
+                    <p>Discover the snippets that the community has voted as the best.</p>
             
                 </div>
             </div>
