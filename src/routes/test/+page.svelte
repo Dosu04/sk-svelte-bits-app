@@ -1,44 +1,22 @@
 <script>
-    let count = 0;
-    let liked = false;
-  
-    function like() {
-      if (!liked) {
-        count++;
-        liked = true;
-      } else {
-        count--;
-        liked = false;
-      }
+    let saved = false;
+    
+    function handleClick() {
+      saved = !saved;
     }
   </script>
   
-  <button class="Like-Button" on:click={like}>
-    {#if liked}
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-      </svg>
-    {:else}
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-      </svg>
-    {/if}
-    
-    <span>{count}</span>
-  </button>
-  
   <style>
-    .Like-Button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
+    .saved {
+      fill: green;
     }
     
-    .Like-Button svg {
-      margin-right: 5px;
-      vertical-align: middle;
+    .unsaved {
+      fill: gray;
     }
   </style>
+  
+  <svg viewBox="0 0 24 24" width="24" height="24" class="{saved ? 'saved' : 'unsaved'}" on:click={handleClick}>
+    <path d="M17.28 3.51L20.49 6.72L17.28 9.93L16.5 9.14L18.36 7.28L11.99 7.28V2.99C11.99 2.45 11.54 2 11 2H4C3.45 2 3 2.45 3 2.99V21C3 21.55 3.45 22 4 22H17.99C18.54 22 19 21.55 19 21V5.64L17.28 3.91V3.51ZM16.99 19.42L6.99 19.42V4.99H10.99V8.99H14.99V19.42H16.99Z"/>
+  </svg>
   
