@@ -671,7 +671,6 @@
 		.Navigation-Buttons {
 			padding-left: 2rem;
 			padding-right: 2rem;
-			border-radius: 2rem;
 		}
 
 		.Navigation-Buttons#Log {
@@ -1048,10 +1047,17 @@
 			width: 4rem;
 		}
 
-		.Navigation-Buttons {
-			border-radius: 1.5rem;
-			font-size: 14px;
+        .btn{
+            border-radius: 0.5rem;
+        }
 
+        .Navigation-Buttons {
+			padding-left: 0.8rem;
+			padding-right: 0.8rem;
+		}
+
+		.Navigation-Buttons#Log {
+			margin-right: 0.3rem;
 		}
 
 		/* Hero */
@@ -1417,9 +1423,9 @@
 	.btn {
 		border-radius: 2rem;
 	}
-	.Navigation-Section {
+	/* .Navigation-Section {
 		border-bottom: solid 2px #434343;
-	}
+	} */
 
 	.Navigation-Logo-Container {
 		padding: 0;
