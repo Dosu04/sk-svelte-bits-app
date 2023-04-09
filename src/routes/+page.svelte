@@ -6,7 +6,7 @@
     <section class="Navigation-Section container-fluid"> 
         <div class="row Naivgation-Container ">
             <div class="col Navigation-Logo-Container">
-                <img src="/images/sb.png" class="Navigation-Logo" alt="Svelte Bits">
+                <img src="/images/home/sb.png" class="Navigation-Logo" alt="Svelte Bits">
             </div>
             <div class="col Navigation-Buttons-Container ">
                 <a href="" type="button" class="btn btn-outline-light Navigation-Buttons" id="Log">Log In</a>
@@ -25,7 +25,7 @@
                 <a href="" class="btn btn-light Hero-Buttons">Share my own snippet!</a>
             </div>
             <div class="col-lg-12 Hero-Image-Container">
-                <img src="/images/hero.png" class="Hero-Image" alt="">
+                <img src="/images/home/hero.png" class="Hero-Image" alt="">
             </div>
         </div>
     </section>
@@ -133,7 +133,7 @@
 
         <div class="row Dissemination-Container">
             <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
-                <img src="/images/dissemination/community.png" width="100%" alt="">
+                <img src="/images/home/community.png" width="100%" alt="">
 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text ">
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
-                <img src="/images/dissemination/team.png" width="100%" alt="">
+                <img src="/images/home/team.png" width="100%" alt="">
             </div>
             
         </div>
@@ -165,7 +165,7 @@
     <section class="Dissemination-Section-1 container-fluid">
         <div class="row Dissemination-Container">
             <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
-                <img src="/images/dissemination/media.png" width="100%" alt="">
+                <img src="/images/home/media.png" width="100%" alt="">
 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text ">
@@ -177,6 +177,73 @@
             </div>
         </div>
         
+    </section>
+
+
+
+    <!-- Experience Section -->
+    <section class="Experience-Section container-fluid">
+        <div class="row Experience-Container">
+            <h2>Personalized  <span>Experience</span></h2>
+            
+            <div class="col-lg-12 Line-1-Container">
+                <div class="Line-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-12 Line-2-Container">
+                <div class="Line-2">
+                    <hr>
+                </div>
+            </div>
+            <p>We offer a personalized experience to keep you engaged and motivated to improve your Svelte skills.</p>
+            
+            <div class="Experience-List container-fluid">
+                <div class="row">
+                    <div class="col-md-6 Experience-List-Image-Container">
+                        <img src="/images/home/experience.png" width="100%" alt="">                    
+                    </div>
+                    <div class="col-md-6 Experience-List-Text-Container">
+                        <div class="container-fluid">
+                            <div class="row Experience-List-Text-Content">
+                                <div class="col-sm-2 Experience-List-Text-Sn-Box">
+                                    <div class="Experience-List-Text-Sn row">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 Experience-List-Text">
+                                    <h3>Recommended Snippets</h3>
+                                    <p>Get personalized recommendations based on your activity on the app.</p>
+                                </div>
+                            </div>
+                            <div class="row Experience-List-Text-Content">
+                                <div class="col-sm-2 Experience-List-Text-Sn-Box">
+                                    <div class="Experience-List-Text-Sn row">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 Experience-List-Text">
+                                    <h3>Leaderboard</h3>
+                                    <p>Compete with other users for a spot on our leaderboard.</p>                                    <!-- Second column content here -->
+                                </div>
+                            </div>
+                            <div class="row Experience-List-Text-Content">
+                                <div class="col-sm-2 Experience-List-Text-Sn-Box">
+                                    <div class="Experience-List-Text-Sn row">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 Experience-List-Text">
+                                    <h3>Rewards</h3>
+                                    <p>Earn rewards for your activity on the app, including badges and profile enhancements.</p>                                    <!-- Second column content here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Join Section -->
@@ -425,6 +492,93 @@
             text-align: left;
         }
 
+
+
+        /* Experience */
+        .Experience-Section{
+            padding: 10rem 8rem 5rem;
+        }
+        
+        .Experience-Container h2, .Experience-Container p{
+            text-align: center;
+        }
+        
+        .Experience-Container span{
+            color: #1ABC00;
+        }
+
+        .Experience-Container .Line-1-Container{
+            display: grid;
+            justify-items: start;
+
+        }
+
+        .Experience-Container .Line-1{
+            width: 58%;
+        }
+
+        .Experience-Container .Line-1 hr{
+            width: 100%;
+            border: 1px solid #B48FFF;
+            margin-top: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .Experience-Container .Line-2-Container{
+            display: grid;
+            justify-items: end;
+
+        }
+
+        .Experience-Container .Line-2{
+            width: 58%;
+        }
+
+        .Experience-Container .Line-2 hr{
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 0.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .Experience-List{
+            margin-top: 3rem;
+        }
+        
+        .Experience-List-Image-Container{
+            display: grid;
+            place-items: center;
+        }
+
+        .Experience-List-Text-Container{
+            display: grid;
+            place-items: center;
+
+        }
+
+        .Experience-List-Text-Content{
+            margin: 4rem 0rem;
+        }
+        
+        .Experience-List-Text p{
+            text-align: left;
+        }
+        .Experience-List-Text-Sn-Box{
+            background-color: #121B2C;
+            display: grid;
+            place-items: center;
+            border-radius: 100%;
+            height: 100%;
+            padding: 1rem;
+            
+        }
+        
+        .Experience-List-Text-Sn{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+
         /* Join */
         .Join-Section{
             padding: 5rem 8rem;
@@ -659,6 +813,154 @@
             text-align: left;
         }
     
+         /* Features */
+         .Features-Section{
+            padding: 5rem 4rem;
+
+        }
+        
+        .Features-Container h2, .Features-Container p{
+            text-align: center;
+        }
+        
+        .Features-Container span{
+            color: #6DAEDB;
+        }
+
+        .Features-Container .Line-1-Container{
+            display: grid;
+            justify-items: start;
+
+        }
+
+        .Features-Container .Line-1{
+            width: 58%;
+        }
+
+        .Features-Container .Line-1 hr{
+            width: 100%;
+            border: 1px solid #B48FFF;
+            margin-top: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .Features-Container .Line-2-Container{
+            display: grid;
+            justify-items: end;
+
+        }
+
+        .Features-Container .Line-2{
+            width: 58%;
+        }
+
+        .Features-Container .Line-2 hr{
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 0.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .Features-List{
+            margin-top: 3rem;
+        }
+
+        .Features{
+            border-radius: 1rem;
+        }
+
+        p.Features{
+            background-color: #121B2C;
+            padding: 1rem;
+        }
+
+
+        /* Experience */
+        .Experience-Section{
+            padding: 10rem 4rem 5rem;
+        }
+        
+        .Experience-Container h2, .Experience-Container p{
+            text-align: center;
+        }
+        
+        .Experience-Container span{
+            color: #1ABC00;
+        }
+
+        .Experience-Container .Line-1-Container{
+            display: grid;
+            justify-items: start;
+
+        }
+
+        .Experience-Container .Line-1{
+            width: 58%;
+        }
+
+        .Experience-Container .Line-1 hr{
+            width: 100%;
+            border: 1px solid #B48FFF;
+            margin-top: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .Experience-Container .Line-2-Container{
+            display: grid;
+            justify-items: end;
+
+        }
+
+        .Experience-Container .Line-2{
+            width: 58%;
+        }
+
+        .Experience-Container .Line-2 hr{
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 0.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .Experience-List{
+            margin-top: 3rem;
+        }
+        
+        .Experience-List-Image-Container{
+            display: grid;
+            place-items: center;
+        }
+
+        .Experience-List-Text-Container{
+            display: grid;
+            place-items: center;
+
+        }
+
+        .Experience-List-Text-Content{
+            margin: 1rem 0rem;
+        }
+        
+        .Experience-List-Text p{
+            text-align: left;
+        }
+        .Experience-List-Text-Sn-Box{
+            background-color: #121B2C;
+            display: grid;
+            place-items: center;
+            border-radius: 100%;
+            height: 100%;
+            padding: 1rem;
+            
+        }
+        
+        .Experience-List-Text-Sn{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+
+
         /* Join */
         .Join-Section{
             padding: 5rem 4rem;
@@ -888,6 +1190,144 @@
 
         .Dissemination-Container-Image{
             margin:1rem 0
+        }
+
+        /* Features */
+        .Features-Container{
+            padding: 2rem 1rem;
+        }
+        
+        .Features-Container h2, .Features-Container p{
+            text-align: center;
+        }
+        
+        .Features-Container span{
+            color: #6DAEDB;
+        }
+
+        .Features-Container .Line-1-Container{
+            display: grid;
+            justify-items: start;
+
+        }
+
+        .Features-Container .Line-1{
+            width: 58%;
+        }
+
+        .Features-Container .Line-1 hr{
+            width: 100%;
+            border: 1px solid #B48FFF;
+            margin-top: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .Features-Container .Line-2-Container{
+            display: grid;
+            justify-items: end;
+
+        }
+
+        .Features-Container .Line-2{
+            width: 58%;
+        }
+
+        .Features-Container .Line-2 hr{
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 0.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .Features{
+            border-radius: 1rem;
+        }
+
+        p.Features{
+            background-color: #121B2C;
+            padding: 1rem;
+        }
+
+        /* Experience */
+        .Experience-Section{
+            padding: 5rem 1rem 0rem;
+        }
+        
+        .Experience-Container h2, .Experience-Container p, .Experience-Container h3{
+            text-align: center;
+        }
+        
+        .Experience-Container span{
+            color: #1ABC00;
+        }
+
+        .Experience-Container .Line-1-Container{
+            display: grid;
+            justify-items: start;
+
+        }
+
+        .Experience-Container .Line-1{
+            width: 58%;
+        }
+
+        .Experience-Container .Line-1 hr{
+            width: 100%;
+            border: 1px solid #B48FFF;
+            margin-top: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .Experience-Container .Line-2-Container{
+            display: grid;
+            justify-items: end;
+
+        }
+
+        .Experience-Container .Line-2{
+            width: 58%;
+        }
+
+        .Experience-Container .Line-2 hr{
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 0.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .Experience-List{
+            margin-top: 3rem;
+        }
+        
+        .Experience-List-Image-Container{
+            display: grid;
+            place-items: center;
+        }
+
+        .Experience-List-Text-Container{
+            display: grid;
+            place-items: center;
+
+        }
+
+        .Experience-List-Text-Content{
+            margin: 4rem 0rem;
+        }
+        
+        .Experience-List-Text-Sn-Box{
+            background-color: #121B2C;
+            display: grid;
+            place-items: center;
+            border-radius: 100%;
+            height: 100%;
+            padding: 1rem;
+            margin-bottom: 1.2rem;
+            
+        }
+        
+        .Experience-List-Text-Sn{
+            font-size: 2rem;
+            font-weight: 600;
         }
 
         /* Join */
