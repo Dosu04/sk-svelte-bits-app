@@ -109,7 +109,7 @@
                     <p>Create custom folders to better organize your snippets.</p>
             
                 </div>
-                <div class="col Discover-Box">
+                <div class="col  Discover-Box">
                     <h3>Community Favorites</h3>
                     <p>Discover the snippets that the community has voted as the best.</p>
             
@@ -126,6 +126,57 @@
             <p>Quickly and easily share your Svelte code snippets with others. Our sharing tools allow you to share either individual snippets or entire collections.</p>
 
             
+    </section>
+
+    <!-- Dissemination -->
+    <section class="Dissemination-Section-1 container-fluid">
+
+        <div class="row Dissemination-Container">
+            <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
+                <img src="/images/dissemination/community.png" width="100%" alt="">
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text ">
+                <div class="Right">
+                    <h3>Share with the community</h3> <br>
+                    <p>Share your snippets with the community and let them benefit from your knowledge.</p>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+        
+<section class="Dissemination-Section-2 container-fluid">
+        <div class="row Dissemination-Container">
+            <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text ">
+                <div class="Left">
+                    <h3>Share with your team</h3> <br>
+                    <p>Collaborate with your team more effectively by sharing your collections.</p>
+    
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
+                <img src="/images/dissemination/team.png" width="100%" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="Dissemination-Section-1 container-fluid">
+        <div class="row Dissemination-Container">
+            <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
+                <img src="/images/dissemination/media.png" width="100%" alt="">
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text ">
+                <div class="Right">
+                    <h3>Share on social media</h3> <br>
+                    <p>Connect with the wider Svelte community and share your snippets on social media.</p>
+    
+                </div>
+            </div>
+        </div>
+        
     </section>
 </main>
 
@@ -194,7 +245,7 @@
             padding: 5rem 8rem;
         }
         
-        .Features-Container h2, p{
+        .Features-Container h2, .Features-Container p{
             text-align: center;
         }
         
@@ -317,7 +368,39 @@
             
             padding: 3.5rem;
         } 
-      
+        
+        
+
+        /* Dissemination */
+        .Dissemination-Section-1{
+            padding: 0 8.7rem;
+            background-color: white;
+            color: black;
+        } 
+        .Dissemination-Section-2{
+            padding: 0 8.7rem;
+            background-color: #0d1a1c ;
+            color: white;
+        } 
+
+        .Dissemination-Container{
+            padding-top: 4rem ;
+            padding-bottom: 4rem ;
+        }
+
+        .Dissemination-Container-Text{
+            display: grid;
+            place-content: center;
+            
+        }
+
+        .Dissemination-Container-Text .Right{
+            text-align: right;
+        }
+
+        .Dissemination-Container-Text .Left{
+            text-align: left;
+        }
     }
 
 
@@ -378,7 +461,7 @@
 
         }
         
-        .Features-Container h2, p{
+        .Features-Container h2, .Features-Container p{
             text-align: center;
         }
         
@@ -502,6 +585,38 @@
             
             padding: 2.5rem;
         } 
+
+
+        /* Dissemination */
+        .Dissemination-Section-1{
+            padding: 0 4rem;
+            background-color: white;
+            color: black;
+        } 
+        .Dissemination-Section-2{
+            padding: 0 4rem;
+            background-color: #0d1a1c ;
+            color: white;
+        } 
+
+        .Dissemination-Container{
+            padding-top: 4rem ;
+            padding-bottom: 4rem ;
+        }
+
+        .Dissemination-Container-Text{
+            display: grid;
+            place-content: center;
+            
+        }
+
+        .Dissemination-Container-Text .Right{
+            text-align: right;
+        }
+
+        .Dissemination-Container-Text .Left{
+            text-align: left;
+        }
     }
 
 
@@ -556,7 +671,7 @@
             padding: 2rem 1rem;
         }
         
-        .Features-Container h2, p{
+        .Features-Container h2, .Features-Container p{
             text-align: center;
         }
         
@@ -678,6 +793,42 @@
             
             padding: 1.5rem;
         } 
+
+
+        /* Dissemination */
+        .Dissemination-Section-1{
+            padding: 0 1rem;
+            background-color: white;
+            color: black;
+        } 
+        .Dissemination-Section-2{
+            padding: 0 1rem;
+            background-color: #0d1a1c ;
+            color: white;
+        } 
+
+        .Dissemination-Container{
+            padding-top: 4rem ;
+            padding-bottom: 4rem ;
+        }
+
+        .Dissemination-Container-Text{
+            display: grid;
+            place-content: center;
+            
+        }
+
+        .Dissemination-Container-Text .Right{
+            text-align: center;
+        }
+
+        .Dissemination-Container-Text .Left{
+            text-align: center;
+        }
+
+        .Dissemination-Container-Image{
+            margin:1rem 0
+        }
 
     }
 
