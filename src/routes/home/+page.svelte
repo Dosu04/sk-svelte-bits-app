@@ -295,7 +295,7 @@
 
 		/* Navigation */
 		.Navigation-Section {
-			padding: 1rem 3rem;
+			padding: 1rem 1rem;
 			background-color: #121B2C;
 		}
 		.Naivgation-Container h4{
@@ -305,7 +305,7 @@
 		.Navigation-Switch-Container{
 			display: inline-block;
 			margin-left: 2rem;
-			padding: 1rem 1rem;
+			padding: 0.5rem 0.5rem;
 			background-color: #0C121D;
 			border-radius: 2rem;
 		}
