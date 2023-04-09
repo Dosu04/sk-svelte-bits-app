@@ -76,7 +76,7 @@
 
 			<div class="row Collections-Boxes-Container">
 				<div class="col Collections-Box">
-					<h3>Quick Access</h3>
+					<h4>Quick Access</h4>
 					<p>
 						Quickly access your favorites with just a few clicks. Keep your favorite snippets sorted
 						and easy to find.
@@ -447,7 +447,7 @@
 			padding: 5rem 8rem;
 		}
 		.Collections-Section h2,
-		.Collections-Section h3,
+		.Collections-Section h4,
 		.Collections-Section p {
 			text-align: center;
 			color: black;
@@ -766,7 +766,7 @@
 			padding: 5rem 4rem;
 		}
 		.Collections-Section h2,
-		.Collections-Section h3,
+		.Collections-Section h4,
 		.Collections-Section p {
 			text-align: center;
 			color: black;
@@ -1134,7 +1134,7 @@
 			padding: 2rem 1rem;
 		}
 		.Collections-Section h2,
-		.Collections-Section h3,
+		.Collections-Section h4,
 		.Collections-Section p {
 			text-align: center;
 			color: black;
