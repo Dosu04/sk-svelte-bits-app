@@ -1423,9 +1423,9 @@
 	.btn {
 		border-radius: 2rem;
 	}
-	/* .Navigation-Section {
+	.Navigation-Section {
 		border-bottom: solid 2px #434343;
-	} */
+	}
 
 	.Navigation-Logo-Container {
 		padding: 0;
