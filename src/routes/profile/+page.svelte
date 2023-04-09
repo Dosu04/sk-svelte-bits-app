@@ -19,6 +19,29 @@
 	function handleClick() {
 		saved = !saved;
 	}
+
+	//modal1
+	let showModal = false; // state variable to show/hide the modal
+
+	let fullname = ''; // form input value
+	let username = ''; // form input value
+	let email = ''; // form input value
+	let password = ''; // form input value
+
+
+	function handleClickModal() {
+		showModal = true; // show the modal when the image is clicked
+	}
+
+	function closeModal() {
+		showModal = false; // hide the modal when the close button is clicked
+	}
+
+	function handleSubmit() {
+		// do something with the form data
+		console.log(`Name: ${fullname}`);
+		closeModal();
+	}
 </script>
 
 <main class="Large">
@@ -42,7 +65,7 @@
 				</h4>
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				<a href="/notifications" class="Navigation-Notification-Container" >
+				<a href="/notifications" class="Navigation-Notification-Container">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="30"
@@ -57,10 +80,28 @@
 					</svg>
 				</a>
 
-				
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
-					<a href=""><img src="/images/home/profile.jpg" alt="" /></a>
+					<img src="/images/home/profile.jpg" alt="" on:click={handleClickModal} />
+					{#if showModal}
+						<div class="modal1" style="color: black;">
+							<div class="modal-content">
+								<span class="close-btn" on:click={closeModal}>&times;</span>
+								<form on:submit|preventDefault={handleSubmit}>
+									<br><br><br>
+									<input type="text" class="mb-3" placeholder="Full Name (Surname First)" id="fullname" bind:value={fullname} required />
+									<input type="text" class="mb-3" placeholder="Username" id="username" bind:value={username} required />
+									<input type="email" class="mb-3" placeholder="Email" id="email" bind:value={email} required />
+									<input type="password" class="mb-3" placeholder="Password" id="password" bind:value={password} required />
+									
+									<div class="btn-group">
+										<button class="btn btn-success" type="submit">Save Changes</button>
+										<button class="btn btn-danger" type="button" on:click={closeModal}>Close</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					{/if}
 				</div>
 				<div
 					class="Navigation-Menu-Toggler"
@@ -171,6 +212,18 @@
 							</li>
 						</ul>
 						<hr />
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="/"
+									>
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+										<path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+									  </svg> LOG OUT </a
+								>
+							</li>
+
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -182,28 +235,46 @@
 		<div class="row Feed-Container">
 			<div class="col-lg-12 Feed-Snippet-Container">
 				<!-- Button trigger modal -->
-<button type="button" class="btn btn-danger Delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	Delete
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:black">Delete Snippet???</h1>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body" style="color:black">
-			Are you sure you want to delete this snippet
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
-		  <button type="button" class="btn btn-danger">Yes, Delete</button>
-		</div>
-	  </div>
-	</div>
-  </div>
+				<button
+					type="button"
+					class="btn btn-danger Delete"
+					data-bs-toggle="modal"
+					data-bs-target="#exampleModal"
+				>
+					Delete
+				</button>
+
+				<!-- Modal -->
+				<div
+					class="modal fade"
+					id="exampleModal"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel" style="color:black">
+									Delete Snippet???
+								</h1>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								/>
+							</div>
+							<div class="modal-body" style="color:black">
+								Are you sure you want to delete this snippet
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+								<button type="button" class="btn btn-danger">Yes, Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<div class="row Feed-Snippet-Heading-Container">
 					<img src="/images/home/profile.jpg" alt="" />
@@ -343,8 +414,6 @@
 			display: inline-block;
 		}
 
-		
-		
 		.Navigation-Right-Container {
 			text-align: right;
 		}
@@ -413,8 +482,8 @@
 			padding: 3rem;
 			margin-bottom: 4rem;
 		}
-		button.Delete{
-			margin-bottom:3rem;
+		button.Delete {
+			margin-bottom: 3rem;
 		}
 		.Feed-Snippet-Heading-Container img {
 			width: 7rem;
@@ -472,27 +541,6 @@
 			display: inline-block;
 		}
 
-		.Navigation-Switch-Container {
-			display: inline-block;
-			margin-left: 2rem;
-			padding: 0.5rem 0.5rem;
-			background-color: #0c121d;
-			border-radius: 2rem;
-		}
-		.Navigation-Switch-Button {
-			background-color: #0c121d;
-			border-color: #0c121d;
-			color: white;
-			border-radius: 2rem;
-			margin: 0 0.2rem;
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
-		.Navigation-Switch-Button.Active-Button {
-			background-color: #1d2a44;
-			color: white;
-		}
-
 		.Navigation-Right-Container {
 			text-align: right;
 		}
@@ -512,7 +560,6 @@
 			height: 4rem;
 			border-radius: 100%;
 			border: 5px solid green;
-
 		}
 		.Navigation-Profile-Username {
 			display: inline-block;
@@ -560,8 +607,8 @@
 			padding: 3rem;
 			margin-bottom: 4rem;
 		}
-		button.Delete{
-			margin-bottom:3rem;
+		button.Delete {
+			margin-bottom: 3rem;
 		}
 		.Feed-Snippet-Heading-Container img {
 			width: 7rem;
@@ -636,4 +683,48 @@
 	.unsaved {
 		fill: white;
 	}
+
+	/* styles for the modal1 */
+	.modal1 {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.modal1 .modal-content {
+		background-color: #fff;
+		padding: 1rem;
+		border-radius: 0.25rem;
+		max-width: 50%;
+		max-height: 90%;
+		overflow-y: auto;
+	}
+
+	.modal1 .close-btn {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+
+	.modal1 input {
+		display: block;
+		margin-bottom: 1rem;
+		width: 100%;
+		padding: 0.5rem;
+		border-radius: 0.25rem;
+		border: 1px solid #ccc;
+	}
+
+	.modal1 button {
+		margin-right: 0.5rem;
+	}
+
 </style>

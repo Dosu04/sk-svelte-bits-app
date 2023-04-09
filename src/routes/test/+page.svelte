@@ -20,7 +20,7 @@
 
 <style>
   /* styles for the modal */
-  .modal {
+  .modal1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@
     align-items: center;
   }
   
-  .modal-content {
+  .modal1 .modal-content {
     background-color: #fff;
     padding: 1rem;
     border-radius: 0.25rem;
@@ -41,7 +41,7 @@
     overflow-y: auto;
   }
   
-  .close-btn {
+  .modal1 .close-btn {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -49,7 +49,7 @@
     cursor: pointer;
   }
   
-  input {
+  .modal1 input {
     display: block;
     margin-bottom: 1rem;
     width: 100%;
@@ -58,7 +58,7 @@
     border: 1px solid #ccc;
   }
   
-  button {
+  .modal1 button {
     margin-right: 0.5rem;
   }
 </style>
