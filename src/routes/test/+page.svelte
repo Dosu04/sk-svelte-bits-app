@@ -1,22 +1,82 @@
 <script>
-    let saved = false;
-    
-    function handleClick() {
-      saved = !saved;
-    }
-  </script>
+  let showModal = false; // state variable to show/hide the modal
   
-  <style>
-    .saved {
-      fill: green;
-    }
-    
-    .unsaved {
-      fill: gray;
-    }
-  </style>
+  let name = ''; // form input value
   
-  <svg viewBox="0 0 24 24" width="24" height="24" class="{saved ? 'saved' : 'unsaved'}" on:click={handleClick}>
-    <path d="M17.28 3.51L20.49 6.72L17.28 9.93L16.5 9.14L18.36 7.28L11.99 7.28V2.99C11.99 2.45 11.54 2 11 2H4C3.45 2 3 2.45 3 2.99V21C3 21.55 3.45 22 4 22H17.99C18.54 22 19 21.55 19 21V5.64L17.28 3.91V3.51ZM16.99 19.42L6.99 19.42V4.99H10.99V8.99H14.99V19.42H16.99Z"/>
-  </svg>
+  function handleClick() {
+    showModal = true; // show the modal when the image is clicked
+  }
   
+  function closeModal() {
+    showModal = false; // hide the modal when the close button is clicked
+  }
+  
+  function handleSubmit() {
+    // do something with the form data
+    console.log(`Name: ${name}`);
+    closeModal();
+  }
+</script>
+
+<style>
+  /* styles for the modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-right: 0.5rem;
+  }
+</style>
+
+<img src="/images/home/profile.jpg" alt="" on:click={handleClick} />
+
+{#if showModal}
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-btn" on:click={closeModal}>&times;</span>
+      <form on:submit|preventDefault={handleSubmit}>
+        <label for="name">Name:</label>
+        <input type="text" id="name" bind:value={name} required />
+        <div class="btn-group">
+          <button type="submit">Submit</button>
+          <button type="button" on:click={closeModal}>Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{/if}

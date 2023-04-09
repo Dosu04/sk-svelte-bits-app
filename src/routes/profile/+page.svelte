@@ -42,7 +42,7 @@
 				</h4>
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				<a href="/notifications" class="Navigation-Notification-Container">
+				<a href="/notifications" class="Navigation-Notification-Container" >
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="30"
@@ -56,9 +56,11 @@
 						/>
 					</svg>
 				</a>
+
+				
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
-					<img src="/images/home/profile.jpg" alt="" />
+					<a href=""><img src="/images/home/profile.jpg" alt="" /></a>
 				</div>
 				<div
 					class="Navigation-Menu-Toggler"
@@ -341,27 +343,8 @@
 			display: inline-block;
 		}
 
-		.Navigation-Switch-Container {
-			display: inline-block;
-			margin-left: 2rem;
-			padding: 1rem 1rem;
-			background-color: #0c121d;
-			border-radius: 2rem;
-		}
-		.Navigation-Switch-Button {
-			background-color: #0c121d;
-			border-color: #0c121d;
-			color: white;
-			border-radius: 2rem;
-			margin: 0 0.2rem;
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
-		.Navigation-Switch-Button.Active-Button {
-			background-color: #1d2a44;
-			color: white;
-		}
-
+		
+		
 		.Navigation-Right-Container {
 			text-align: right;
 		}
@@ -382,6 +365,7 @@
 		.Navigation-Profile-Container img {
 			height: 100%;
 			border-radius: 100%;
+			border: 5px solid green;
 		}
 		.Navigation-Profile-Username {
 			display: inline-block;
@@ -527,6 +511,8 @@
 		.Navigation-Profile-Container img {
 			height: 4rem;
 			border-radius: 100%;
+			border: 5px solid green;
+
 		}
 		.Navigation-Profile-Username {
 			display: inline-block;
