@@ -596,6 +596,13 @@
 		main.Large {
 			display: none;
 		}
+		main.Small{
+			display: grid;
+			place-items: center;
+			height: 100vh;
+			padding: 1.5rem;
+			font-size: 2rem;
+		}
 	}
 
 	/* General */
