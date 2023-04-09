@@ -91,7 +91,7 @@
                         <img src="/images/home/sb.png" class="Onboarding-Image" width="50rem" alt="">
                     </div>
                     <div class="Oboarding-Title-Container">
-                        <h3 class="Onboarding-Title">Welcome back to Svelte Bits!</h3>
+                        <h3 class="Onboarding-Title">Welcome to Svelte Bits!</h3>
                     </div>
                 </div>
                 <div class="mb-3">
