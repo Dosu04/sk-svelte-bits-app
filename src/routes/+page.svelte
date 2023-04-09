@@ -5,10 +5,10 @@
 	<!-- Navigation-Section -->
 	<section class="Navigation-Section container-fluid">
 		<div class="row Naivgation-Container">
-			<div class="col Navigation-Logo-Container">
+			<div class="col-md-4 Navigation-Logo-Container">
 				<img src="/images/home/sb.png" class="Navigation-Logo" alt="Svelte Bits" />
 			</div>
-			<div class="col Navigation-Buttons-Container">
+			<div class="col-md-8 Navigation-Buttons-Container">
 				<a href="/sign-in" type="button" class="btn btn-outline-light Navigation-Buttons" id="Log"
 					>Log In</a
 				>
@@ -1045,12 +1045,13 @@
 		}
 
 		.Navigation-Logo {
-			width: 2rem;
+			width: 4rem;
 		}
 
 		.Navigation-Buttons {
 			border-radius: 1.5rem;
-			font-size: 8px;
+			font-size: 14px;
+
 		}
 
 		/* Hero */
