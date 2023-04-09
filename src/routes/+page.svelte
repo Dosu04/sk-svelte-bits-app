@@ -6,7 +6,7 @@
 	<section class="Navigation-Section container-fluid">
 		<div class="row Naivgation-Container">
 			<div class="col-md-4 Navigation-Logo-Container">
-				<img src="/images/home/sb.png" class="Navigation-Logo" alt="Svelte Bits" />
+				<img src="/images/index/sb.png" class="Navigation-Logo" alt="Svelte Bits" />
 			</div>
 			<div class="col-md-8 Navigation-Buttons-Container">
 				<a href="/sign-in" type="button" class="btn btn-outline-light Navigation-Buttons" id="Log"
@@ -30,7 +30,7 @@
 				<a href="/sign-in" class="btn btn-light Hero-Buttons">Share my own snippet!</a>
 			</div>
 			<div class="col-lg-12 Hero-Image-Container">
-				<img src="/images/home/hero.png" class="Hero-Image" alt="" />
+				<img src="/images/index/hero.png" class="Hero-Image" alt="" />
 			</div>
 		</div>
 	</section>
@@ -127,7 +127,7 @@
 	<section class="Dissemination-Section-1 container-fluid">
 		<div class="row Dissemination-Container">
 			<div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
-				<img src="/images/home/community.png" width="100%" alt="" />
+				<img src="/images/index/community.png" width="100%" alt="" />
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text">
 				<div class="Right">
@@ -149,7 +149,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
-				<img src="/images/home/team.png" width="100%" alt="" />
+				<img src="/images/index/team.png" width="100%" alt="" />
 			</div>
 		</div>
 	</section>
@@ -157,7 +157,7 @@
 	<section class="Dissemination-Section-1 container-fluid">
 		<div class="row Dissemination-Container">
 			<div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Image">
-				<img src="/images/home/media.png" width="100%" alt="" />
+				<img src="/images/index/media.png" width="100%" alt="" />
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 Dissemination-Container-Text">
 				<div class="Right">
@@ -192,7 +192,7 @@
 			<div class="Experience-List container-fluid">
 				<div class="row">
 					<div class="col-md-6 Experience-List-Image-Container">
-						<img src="/images/home/experience.png" width="100%" alt="" />
+						<img src="/images/index/experience.png" width="100%" alt="" />
 					</div>
 					<div class="col-md-6 Experience-List-Text-Container">
 						<div class="container-fluid">
@@ -271,13 +271,13 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="/images/home/snippets.png" class="d-block w-100" alt="..." />
+						<img src="/images/index/snippets.png" class="d-block w-100" alt="..." />
 					</div>
 					<div class="carousel-item">
-						<img src="/images/home/snippets.png" class="d-block w-100" alt="..." />
+						<img src="/images/index/snippets.png" class="d-block w-100" alt="..." />
 					</div>
 					<div class="carousel-item">
-						<img src="/images/home/snippets.png" class="d-block w-100" alt="..." />
+						<img src="/images/index/snippets.png" class="d-block w-100" alt="..." />
 					</div>
 				</div>
 				<button

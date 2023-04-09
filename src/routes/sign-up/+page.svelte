@@ -29,7 +29,7 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="/images/home/onboard (1).png" class="d-block w-100" alt="..." />
+						<img src="/images/index/onboard (1).png" class="d-block w-100" alt="..." />
 						<div class="overlay" />
 						<div class="carousel-caption d-none d-md-block">
 							<h2>Easy Sharing</h2>
@@ -40,7 +40,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="/images/home/onboard (3).png" class="d-block w-100" alt="..." />
+						<img src="/images/index/onboard (3).png" class="d-block w-100" alt="..." />
 						<div class="overlay" />
 						<div class="carousel-caption d-none d-md-block">
 							<h2>Personal Collection</h2>
@@ -51,7 +51,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="/images/home/onboard (2).png" class="d-block w-100" alt="..." />
+						<img src="/images/index/onboard (2).png" class="d-block w-100" alt="..." />
 						<div class="overlay" />
 
 						<div class="carousel-caption d-none d-md-block">
@@ -88,7 +88,7 @@
 			<form>
                 <div class="Onboarding-Header">
                     <div class="Onboarding-Image-Container">
-                        <img src="/images/home/sb.png" class="Onboarding-Image" width="50rem" alt="">
+                        <img src="/images/index/sb.png" class="Onboarding-Image" width="50rem" alt="">
                     </div>
                     <div class="Oboarding-Title-Container">
                         <h3 class="Onboarding-Title">Welcome to Svelte Bits!</h3>
