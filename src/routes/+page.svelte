@@ -9,8 +9,8 @@
                 <img src="/images/home/sb.png" class="Navigation-Logo" alt="Svelte Bits">
             </div>
             <div class="col Navigation-Buttons-Container ">
-                <a href="" type="button" class="btn btn-outline-light Navigation-Buttons" id="Log">Log In</a>
-                <a href="" type="button" class="btn btn-light Navigation-Buttons" id="Reg">Get Started</a>
+                <a href="/sign-in" type="button" class="btn btn-outline-light Navigation-Buttons" id="Log">Log In</a>
+                <a href="/sign-up" type="button" class="btn btn-light Navigation-Buttons" id="Reg">Get Started</a>
 
             </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="row Hero-Container">
             <div class="col-lg-12 Hero-Text-Container">
                 <h1><span>Share your own snippets</span>, discover new ones, and vote on your favorites.</h1> <br>
-                <a href="" class="btn btn-light Hero-Buttons">Share my own snippet!</a>
+                <a href="/sign-in" class="btn btn-light Hero-Buttons">Share my own snippet!</a>
             </div>
             <div class="col-lg-12 Hero-Image-Container">
                 <img src="/images/home/hero.png" class="Hero-Image" alt="">
@@ -71,19 +71,11 @@
 
             
             <div class="row Collections-Boxes-Container">
-                <div class="col Collections-Box">
-                    <h3>Organization</h3>
-                    <p>Keep your favorite snippets sorted and easy to find.</p>
-            
-                </div>
-                <div class="col Collections-Box">
-                    <h3>Custom Folders</h3>
-                    <p>Create custom folders to better organize your snippets.</p>
-            
-                </div>
+                
                 <div class="col Collections-Box">
                     <h3>Quick Access</h3>
-                    <p>Quickly access your favorites with just a few clicks.</p>
+                    <p>Quickly access your favorites with just a few clicks. Keep your favorite snippets sorted and easy to find.</p>
+            
             
                 </div>
             </div>
@@ -253,7 +245,7 @@
                 <h2>Top Rated Snippets</h2>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 Snippets-Button-Container">
-                <a href="" class="btn btn-light" >Share my own snippet!</a>
+                <a href="/sign-in" class="btn btn-light" >Share my own snippet!</a>
             </div>
         </div>
         <div class="row Snippets-Carousel">
@@ -293,7 +285,7 @@
                 <h1>Join Our Community</h1> 
                 <p>Join the Svelte Bits community today and start contributing to and benefiting from the wealth of Svelte knowledge within the app.</p>
                 <br>
-                <a href="" class="btn btn-light Join-Buttons">Join Our Community</a>
+                <a href="/sign-up" class="btn btn-light Join-Buttons">Join Our Community</a>
             </div>
         </div>
     </section>
