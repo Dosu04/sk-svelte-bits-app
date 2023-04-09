@@ -32,18 +32,14 @@
 						width="35"
 						height="35"
 						fill="currentColor"
-						class="bi bi-house-door-fill"
+						class="bi bi-person"
 						viewBox="0 0 16 16"
 					>
 						<path
-							d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+							d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
 						/>
-					</svg> Home
+					</svg> Profile
 				</h4>
-				<div class="Navigation-Switch-Container">
-					<a href="" class="btn btn-light Navigation-Switch-Button Active-Button">Explore Feed</a>
-					<a href="" class="btn btn-light Navigation-Switch-Button">Collection</a>
-				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
 				<a href="/notifications" class="Navigation-Notification-Container">
@@ -104,7 +100,7 @@
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item Active-Link">
+							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="/home"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +151,7 @@
 									</svg> Add Snippet</a
 								>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item Active-Link">
 								<a class="nav-link" href="/profile"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +169,6 @@
 							</li>
 						</ul>
 						<hr />
-
 					</div>
 				</div>
 			</div>
@@ -184,10 +179,34 @@
 	<section class="Feed-Section container-fluid">
 		<div class="row Feed-Container">
 			<div class="col-lg-12 Feed-Snippet-Container">
+				<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger Delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	Delete
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:black">Delete Snippet???</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" style="color:black">
+			Are you sure you want to delete this snippet
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+		  <button type="button" class="btn btn-danger">Yes, Delete</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
 				<div class="row Feed-Snippet-Heading-Container">
-					<img src="/images/home/other.jpg" alt="" />
+					<img src="/images/home/profile.jpg" alt="" />
 					<p class="Feed-Snippet-Text-Container">
-						Philip_Kobz <br /><span
+						Dosu_E <br /><span
 							><svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -300,7 +319,9 @@
 
 <!-- small screen -->
 <main class="Small">
-	<strong>Switch to Desktop, Laptop or Tablet. <br><br><br> Mobile Phone version not AVAILABLE</strong>
+	<strong
+		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version not AVAILABLE</strong
+	>
 </main>
 
 <style>
@@ -351,7 +372,7 @@
 			border-radius: 100%;
 			background-color: #1d2a44;
 		}
-		a.Navigation-Notification-Container{
+		a.Navigation-Notification-Container {
 			color: white;
 		}
 		.Navigation-Profile-Container {
@@ -407,6 +428,9 @@
 			border-radius: 2rem;
 			padding: 3rem;
 			margin-bottom: 4rem;
+		}
+		button.Delete{
+			margin-bottom:3rem;
 		}
 		.Feed-Snippet-Heading-Container img {
 			width: 7rem;
@@ -550,6 +574,9 @@
 			padding: 3rem;
 			margin-bottom: 4rem;
 		}
+		button.Delete{
+			margin-bottom:3rem;
+		}
 		.Feed-Snippet-Heading-Container img {
 			width: 7rem;
 			display: inline;
@@ -595,7 +622,7 @@
 		main.Large {
 			display: none;
 		}
-		main.Small{
+		main.Small {
 			display: grid;
 			place-items: center;
 			height: 100vh;
