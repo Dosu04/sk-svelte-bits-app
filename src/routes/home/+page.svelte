@@ -281,6 +281,7 @@
 						</svg>
 					</div>
 					<div class="col-sm-3">
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="50"
@@ -303,7 +304,7 @@
 
 <!-- small screen -->
 <main class="Small">
-	<strong>Switch to Desktop, Laptop or Tablet. Mobile Phone version not AVAILABLE</strong>
+	<strong>Switch to Desktop, Laptop or Tablet. <br>Mobile Phone version not AVAILABLE</strong>
 </main>
 
 <style>
