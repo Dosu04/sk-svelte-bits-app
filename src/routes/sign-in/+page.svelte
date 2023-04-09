@@ -108,7 +108,7 @@
 					<input type="password" class="form-control" id="exampleInputPassword1" />
 				</div>
 
-				<button type="submit" style="" class="btn btn-success Onboarding-Submit-Button">Submit</button> 
+				<a href="/home" type="submit" style="" class="btn btn-success Onboarding-Submit-Button">Sign In</a> 
                 
                 <hr>
                 <div class="Onboarding-Button-Container">
