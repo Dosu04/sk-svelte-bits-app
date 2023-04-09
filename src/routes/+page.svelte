@@ -1411,14 +1411,15 @@
 
         /* Snippets */
         .Snippets-Section{
-            padding: 1rem 1rem;
+            padding: 1rem 1rem 3rem;
         }
         .Snippets-Heading{
-            text-align: center;
+            text-align: left;
 
         }
         .Snippets-Button-Container{
-            text-align: center;
+            margin-top: 1rem;
+            text-align: left;
 
         }
         .Snippets-Carousel{
