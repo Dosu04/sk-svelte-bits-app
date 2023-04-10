@@ -12,8 +12,6 @@
 			liked = false;
 		}
 	}
-
-
 </script>
 
 <main class="Large">
@@ -36,12 +34,13 @@
 					</svg> Home
 				</h4>
 				<div class="Navigation-Switch-Container">
-					<a href="/home" class="btn btn-light Navigation-Switch-Button Active-Button">Explore Feed</a>
+					<a href="/home" class="btn btn-light Navigation-Switch-Button Active-Button"
+						>Explore Feed</a
+					>
 					<a href="/home/collection" class="btn btn-light Navigation-Switch-Button">Collection</a>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
 					<img src="/images/home/profile.jpg" alt="" />
@@ -155,7 +154,6 @@
 							</li>
 						</ul>
 						<hr />
-
 					</div>
 				</div>
 			</div>
@@ -230,7 +228,7 @@
 							<span class="Like-Counter"> {count}</span>
 						</button>
 					</div>
-					
+
 					<div class="col-sm-4">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +243,6 @@
 							/>
 						</svg>
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -254,7 +251,9 @@
 
 <!-- small screen -->
 <main class="Small">
-	<strong>Switch to Desktop, Laptop or Tablet. <br><br><br> Mobile Phone version not AVAILABLE</strong>
+	<strong
+		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version not AVAILABLE</strong
+	>
 </main>
 
 <style>
@@ -305,7 +304,7 @@
 			border-radius: 100%;
 			background-color: #1d2a44;
 		}
-		a.Navigation-Notification-Container{
+		a.Navigation-Notification-Container {
 			color: white;
 		}
 		.Navigation-Profile-Container {
@@ -549,7 +548,7 @@
 		main.Large {
 			display: none;
 		}
-		main.Small{
+		main.Small {
 			display: grid;
 			place-items: center;
 			height: 100vh;
@@ -570,7 +569,7 @@
 		align-items: center;
 	}
 
-	a{
+	a {
 		text-decoration: none;
 		color: white;
 	}
