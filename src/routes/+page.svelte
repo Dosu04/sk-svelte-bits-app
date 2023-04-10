@@ -1047,11 +1047,11 @@
 			width: 4rem;
 		}
 
-        .btn{
-            border-radius: 0.5rem;
-        }
+		.btn {
+			border-radius: 0.5rem;
+		}
 
-        .Navigation-Buttons {
+		.Navigation-Buttons {
 			padding-left: 0.8rem;
 			padding-right: 0.8rem;
 		}
