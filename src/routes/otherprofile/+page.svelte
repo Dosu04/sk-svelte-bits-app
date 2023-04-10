@@ -21,7 +21,6 @@
 	let email = ''; // form input value
 	let password = ''; // form input value
 
-
 	function handleClickModal() {
 		showModal = true; // show the modal when the image is clicked
 	}
@@ -41,12 +40,8 @@
 	<!-- Naigation Section -->
 	<section class="Navigation-Section container-fluid fixed-top">
 		<div class="row Naivgation-Container">
-			<div class="col-lg-6 col-md-6 Navigation-Left-Container">
-				
-			</div>
+			<div class="col-lg-6 col-md-6 Navigation-Left-Container" />
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				
-
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Philip_Kobz</p>
 					<img src="/images/home/other.jpg" alt="" on:click={handleClickModal} />
@@ -55,13 +50,38 @@
 							<div class="modal-content">
 								<span class="close-btn" on:click={closeModal}>&times;</span>
 								<form on:submit|preventDefault={handleSubmit}>
-									<br><br><br>
-									<input type="text" class="mb-3" placeholder="Philip Edekobi" id="fullname" bind:value={fullname} required disabled />
-									<input type="text" class="mb-3" placeholder="Philip_Kobz" id="username" bind:value={username} required disabled/>
-									<input type="email" class="mb-3" placeholder="philipedekobi@gmail.com" id="email" bind:value={email} required disabled/>
-									
+									<br /><br /><br />
+									<input
+										type="text"
+										class="mb-3"
+										placeholder="Philip Edekobi"
+										id="fullname"
+										bind:value={fullname}
+										required
+										disabled
+									/>
+									<input
+										type="text"
+										class="mb-3"
+										placeholder="Philip_Kobz"
+										id="username"
+										bind:value={username}
+										required
+										disabled
+									/>
+									<input
+										type="email"
+										class="mb-3"
+										placeholder="philipedekobi@gmail.com"
+										id="email"
+										bind:value={email}
+										required
+										disabled
+									/>
+
 									<div class="btn-group">
-										<button class="btn btn-danger" type="button" on:click={closeModal}>Close</button>
+										<button class="btn btn-danger" type="button" on:click={closeModal}>Close</button
+										>
 									</div>
 								</form>
 							</div>
@@ -159,7 +179,7 @@
 									</svg> Add Snippet</a
 								>
 							</li>
-							<li class="nav-item ">
+							<li class="nav-item">
 								<a class="nav-link" href="/profile"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -179,15 +199,26 @@
 						<hr />
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/"
+								<a class="nav-link" aria-current="page" href="/">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="40"
+										height="40"
+										fill="currentColor"
+										class="bi bi-box-arrow-left"
+										viewBox="0 0 16 16"
 									>
-									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-										<path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-										<path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-									  </svg> LOG OUT </a
-								>
+										<path
+											fill-rule="evenodd"
+											d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"
+										/>
+									</svg> LOG OUT
+								</a>
 							</li>
-
 						</ul>
 					</div>
 				</div>
@@ -199,9 +230,6 @@
 	<section class="Feed-Section container-fluid">
 		<div class="row Feed-Container">
 			<div class="col-lg-12 Feed-Snippet-Container">
-				
-
-
 				<a href="/otherprofile" class="row Feed-Snippet-Heading-Container">
 					<img src="/images/home/other.jpg" alt="" />
 					<p class="Feed-Snippet-Text-Container">
@@ -280,7 +308,6 @@
 							/>
 						</svg>
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -314,7 +341,7 @@
 		.Navigation-Right-Container {
 			text-align: right;
 		}
-	
+
 		.Navigation-Profile-Container {
 			display: inline-block;
 			height: 100%;
@@ -612,7 +639,7 @@
 	.modal1 button {
 		margin-right: 0.5rem;
 	}
-	a{
+	a {
 		text-decoration: none;
 		color: white;
 	}
