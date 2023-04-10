@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <main class="Large">
@@ -9,22 +8,20 @@
 			<div class="col-lg-6 col-md-6 Navigation-Left-Container">
 				<h4 class="Navigation-Tilte">
 					<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="35"
-										height="35"
-										fill="currentColor"
-										class="bi bi-search"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-										/>
-									</svg> Discover
+						xmlns="http://www.w3.org/2000/svg"
+						width="35"
+						height="35"
+						fill="currentColor"
+						class="bi bi-search"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+						/>
+					</svg> Discover
 				</h4>
-				
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
 					<img src="/images/home/profile.jpg" alt="" />
@@ -69,7 +66,7 @@
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item ">
+							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="/home"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +99,7 @@
 								>
 							</li>
 							<li class="nav-item">
-								<a href="/post" class="nav-link" aria-current="page" 
+								<a href="/post" class="nav-link" aria-current="page"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="40"
@@ -121,7 +118,7 @@
 								>
 							</li>
 							<li class="nav-item">
-								<a href="/profile" class="nav-link" 
+								<a href="/profile" class="nav-link"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="40"
@@ -138,8 +135,6 @@
 							</li>
 						</ul>
 						<hr />
-
-						
 					</div>
 				</div>
 			</div>
@@ -150,9 +145,8 @@
 	<section class="Search-Section container-fluid">
 		<div class="row Search-Container">
 			<form class="d-flex mt-3" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-						
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+				<button class="btn btn-outline-success" type="submit">Search</button>
 			</form>
 		</div>
 	</section>
@@ -160,7 +154,9 @@
 
 <!-- small screen -->
 <main class="Small">
-	<strong>Switch to Desktop, Laptop or Tablet. <br><br><br> Mobile Phone version not AVAILABLE</strong>
+	<strong
+		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version not AVAILABLE</strong
+	>
 </main>
 
 <style>
@@ -190,7 +186,7 @@
 			border-radius: 100%;
 			background-color: #1d2a44;
 		}
-		a.Navigation-Notification-Container{
+		a.Navigation-Notification-Container {
 			color: white;
 		}
 
@@ -242,7 +238,6 @@
 		.Search-Container {
 			padding: 10rem 5rem 3rem;
 		}
-		
 
 		main.Small {
 			display: none;
@@ -265,8 +260,6 @@
 			display: inline-block;
 		}
 
-		
-
 		.Navigation-Right-Container {
 			text-align: right;
 		}
@@ -277,7 +270,7 @@
 			border-radius: 100%;
 			background-color: #1d2a44;
 		}
-		a.Navigation-Notification-Container{
+		a.Navigation-Notification-Container {
 			color: white;
 		}
 		.Navigation-Profile-Container {
@@ -328,7 +321,7 @@
 		.Search-Container {
 			padding: 10rem 5rem 3rem;
 		}
-		
+
 		main.Small {
 			display: none;
 		}
@@ -339,7 +332,7 @@
 		main.Large {
 			display: none;
 		}
-		main.Small{
+		main.Small {
 			display: grid;
 			place-items: center;
 			height: 100vh;
@@ -352,5 +345,4 @@
 	.Navigation-Section {
 		border-bottom: solid 2px #434343;
 	}
-	
 </style>
