@@ -166,7 +166,7 @@
 	<section class="Feed-Section container-fluid">
 		<div class="row Feed-Container">
 			<div class="col-lg-12 Feed-Snippet-Container">
-				<a href="otherprofile" class="row Feed-Snippet-Heading-Container">
+				<a href="/otherprofile" class="row Feed-Snippet-Heading-Container">
 					<img src="/images/home/other.jpg" alt="" />
 					<p class="Feed-Snippet-Text-Container">
 						Philip_Kobz<br /><span

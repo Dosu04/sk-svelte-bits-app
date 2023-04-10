@@ -42,40 +42,25 @@
 	<section class="Navigation-Section container-fluid fixed-top">
 		<div class="row Naivgation-Container">
 			<div class="col-lg-6 col-md-6 Navigation-Left-Container">
-				<h4 class="Navigation-Tilte">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="35"
-						height="35"
-						fill="currentColor"
-						class="bi bi-person"
-						viewBox="0 0 16 16"
-					>
-						<path
-							d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
-						/>
-					</svg> Profile
-				</h4>
+				
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
 				
 
 				<div class="Navigation-Profile-Container">
-					<p class="Navigation-Profile-Username">Dosu_E</p>
-					<img src="/images/home/profile.jpg" alt="" on:click={handleClickModal} />
+					<p class="Navigation-Profile-Username">Philip_Kobz</p>
+					<img src="/images/home/other.jpg" alt="" on:click={handleClickModal} />
 					{#if showModal}
 						<div class="modal1" style="color: black;">
 							<div class="modal-content">
 								<span class="close-btn" on:click={closeModal}>&times;</span>
 								<form on:submit|preventDefault={handleSubmit}>
 									<br><br><br>
-									<input type="text" class="mb-3" placeholder="Full Name (Surname First)" id="fullname" bind:value={fullname} required />
-									<input type="text" class="mb-3" placeholder="Username" id="username" bind:value={username} required />
-									<input type="email" class="mb-3" placeholder="Email" id="email" bind:value={email} required />
-									<input type="password" class="mb-3" placeholder="Password" id="password" bind:value={password} required />
+									<input type="text" class="mb-3" placeholder="Philip Edekobi" id="fullname" bind:value={fullname} required disabled />
+									<input type="text" class="mb-3" placeholder="Philip_Kobz" id="username" bind:value={username} required disabled/>
+									<input type="email" class="mb-3" placeholder="philipedekobi@gmail.com" id="email" bind:value={email} required disabled/>
 									
 									<div class="btn-group">
-										<button class="btn btn-success" type="submit">Save Changes</button>
 										<button class="btn btn-danger" type="button" on:click={closeModal}>Close</button>
 									</div>
 								</form>
@@ -174,7 +159,7 @@
 									</svg> Add Snippet</a
 								>
 							</li>
-							<li class="nav-item Active-Link">
+							<li class="nav-item ">
 								<a class="nav-link" href="/profile"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
