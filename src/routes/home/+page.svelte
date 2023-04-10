@@ -166,7 +166,7 @@
 	<section class="Feed-Section container-fluid">
 		<div class="row Feed-Container">
 			<div class="col-lg-12 Feed-Snippet-Container">
-				<div class="row Feed-Snippet-Heading-Container">
+				<a href="/otherprofile" class="row Feed-Snippet-Heading-Container">
 					<img src="/images/home/other.jpg" alt="" />
 					<p class="Feed-Snippet-Text-Container">
 						Philip_Kobz <br /><span
@@ -188,7 +188,7 @@
 							</svg> Just Now</span
 						>
 					</p>
-				</div>
+				</a>
 				<div class="row Feed-Snippet-Details-Container">
 					<h3 class="Feed-Snippet-Title">Worked on this yesterday, blah blah blah</h3>
 					<img src="/images/home/snippets.png" class="Feed-Snippet" alt="" />
@@ -570,11 +570,8 @@
 		align-items: center;
 	}
 
-	.saved {
-		fill: black;
-	}
-
-	.unsaved {
-		fill: white;
+	a{
+		text-decoration: none;
+		color: white;
 	}
 </style>
