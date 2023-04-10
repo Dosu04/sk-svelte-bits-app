@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <main class="Large">
@@ -9,25 +8,21 @@
 			<div class="col-lg-6 col-md-6 Navigation-Left-Container">
 				<h4 class="Navigation-Tilte">
 					<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="35"
-										height="35"
-										fill="currentColor"
-										class="bi bi-plus-circle"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-										/>
-										<path
-											d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
-										/>
-									</svg> Add Snippet
+						xmlns="http://www.w3.org/2000/svg"
+						width="35"
+						height="35"
+						fill="currentColor"
+						class="bi bi-plus-circle"
+						viewBox="0 0 16 16"
+					>
+						<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+						<path
+							d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+						/>
+					</svg> Add Snippet
 				</h4>
-				
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
 					<img src="/images/home/profile.jpg" alt="" />
@@ -72,7 +67,7 @@
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item ">
+							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="/home"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -141,8 +136,6 @@
 							</li>
 						</ul>
 						<hr />
-
-						
 					</div>
 				</div>
 			</div>
@@ -154,26 +147,31 @@
 		<div class="row Add-Container">
 			<form>
 				<div class="mb-3">
-					<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type in your code here" rows="15"></textarea>
-				  </div>
-				  <div class="mb-3">
-					<label for="exampleFormControlText" class="form-label">Add a title for your snippet</label>
+					<textarea
+						class="form-control"
+						id="exampleFormControlTextarea1"
+						placeholder="Type in your code here"
+						rows="15"
+					/>
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlText" class="form-label">Add a title for your snippet</label
+					>
 
-					<input class="form-control" type="text" aria-label="default input example">
+					<input class="form-control" type="text" aria-label="default input example" />
 				</div>
 				<div class="mb-3">
 					<label for="exampleFormControlTextarea1" class="form-label">Description</label>
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" />
 				</div>
 				<div class="mb-3">
 					<label for="exampleFormControlText" class="form-label">Add tags for your snippet</label>
 
-					<input class="form-control" type="text" aria-label="default input example">
+					<input class="form-control" type="text" aria-label="default input example" />
 				</div>
 				<p>Separate each tag with a coma.</p>
-				<button type="submit" class="btn btn-light">Post Snippet</button><br>
+				<button type="submit" class="btn btn-light">Post Snippet</button><br />
 				<button type="submit" class="btn btn-outline-light">Save As A Draft</button>
-
 			</form>
 		</div>
 	</section>
@@ -181,7 +179,9 @@
 
 <!-- small screen -->
 <main class="Small">
-	<strong>Switch to Desktop, Laptop or Tablet. <br><br><br> Mobile Phone version not AVAILABLE</strong>
+	<strong
+		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version not AVAILABLE</strong
+	>
 </main>
 
 <style>
@@ -211,7 +211,7 @@
 			border-radius: 100%;
 			background-color: #1d2a44;
 		}
-		a.Navigation-Notification-Container{
+		a.Navigation-Notification-Container {
 			color: white;
 		}
 
@@ -263,7 +263,6 @@
 		.Add-Container {
 			padding: 10rem 5rem 3rem;
 		}
-		
 
 		main.Small {
 			display: none;
@@ -286,8 +285,6 @@
 			display: inline-block;
 		}
 
-		
-
 		.Navigation-Right-Container {
 			text-align: right;
 		}
@@ -298,7 +295,7 @@
 			border-radius: 100%;
 			background-color: #1d2a44;
 		}
-		a.Navigation-Notification-Container{
+		a.Navigation-Notification-Container {
 			color: white;
 		}
 		.Navigation-Profile-Container {
@@ -349,7 +346,7 @@
 		.Add-Container {
 			padding: 10rem 5rem 3rem;
 		}
-		
+
 		main.Small {
 			display: none;
 		}
@@ -360,7 +357,7 @@
 		main.Large {
 			display: none;
 		}
-		main.Small{
+		main.Small {
 			display: grid;
 			place-items: center;
 			height: 100vh;
@@ -373,26 +370,26 @@
 	.Navigation-Section {
 		border-bottom: solid 2px #434343;
 	}
-	textarea, input{
-		background-color: #1D2A44;
-		border-color: #1D2A44;
+	textarea,
+	input {
+		background-color: #1d2a44;
+		border-color: #1d2a44;
 		color: white;
 		border-radius: 2rem;
 	}
-	.Add-Section p{
+	.Add-Section p {
 		text-align: right;
 	}
-	.Add-Section button{
+	.Add-Section button {
 		border-radius: 2rem;
 		width: 100%;
 		margin-bottom: 2rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
 		font-size: 1.5rem;
-
 	}
 	::placeholder {
-  color: white;
-  font-size: 1rem;
-}
+		color: white;
+		font-size: 1rem;
+	}
 </style>
