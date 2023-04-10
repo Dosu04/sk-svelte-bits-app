@@ -252,7 +252,7 @@
 <!-- small screen -->
 <main class="Small">
 	<strong
-		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version not AVAILABLE</strong
+		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version NOT AVAILABLE</strong
 	>
 </main>
 
@@ -402,7 +402,7 @@
 	}
 
 	/* Target Tablets */
-	@media screen and (min-width: 700px) and (max-width: 991px) {
+	@media screen and (min-width: 699px) and (max-width: 992px) {
 		/* Main */
 		p {
 			font-size: 1.2rem;
