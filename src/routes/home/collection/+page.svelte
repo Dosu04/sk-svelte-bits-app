@@ -571,8 +571,7 @@
 		align-items: center;
 	}
 
-	
-	a{
+	a {
 		text-decoration: none;
 		color: white;
 	}
