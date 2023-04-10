@@ -314,16 +314,7 @@
 		.Navigation-Right-Container {
 			text-align: right;
 		}
-		.Navigation-Notification-Container {
-			display: inline-block;
-			margin-right: 2rem;
-			padding: 0.8rem;
-			border-radius: 100%;
-			background-color: #1d2a44;
-		}
-		a.Navigation-Notification-Container {
-			color: white;
-		}
+	
 		.Navigation-Profile-Container {
 			display: inline-block;
 			height: 100%;
@@ -331,7 +322,7 @@
 		.Navigation-Profile-Container img {
 			height: 100%;
 			border-radius: 100%;
-			border: 5px solid green;
+			border: 5px solid red;
 		}
 		.Navigation-Profile-Username {
 			display: inline-block;

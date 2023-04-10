@@ -382,7 +382,7 @@
 	.Add-Section p{
 		text-align: right;
 	}
-	button{
+	.Add-Section button{
 		border-radius: 2rem;
 		width: 100%;
 		margin-bottom: 2rem;
