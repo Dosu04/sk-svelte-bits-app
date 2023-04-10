@@ -13,12 +13,7 @@
 		}
 	}
 
-	// Save Button
-	let saved = false;
 
-	function handleClick() {
-		saved = !saved;
-	}
 </script>
 
 <main class="Large">
@@ -41,25 +36,12 @@
 					</svg> Home
 				</h4>
 				<div class="Navigation-Switch-Container">
-					<a href="" class="btn btn-light Navigation-Switch-Button Active-Button">Explore Feed</a>
-					<a href="" class="btn btn-light Navigation-Switch-Button">Collection</a>
+					<a href="/home" class="btn btn-light Navigation-Switch-Button Active-Button">Explore Feed</a>
+					<a href="/home/collection" class="btn btn-light Navigation-Switch-Button">Collection</a>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				<a href="/notifications" class="Navigation-Notification-Container">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="30"
-						height="30"
-						fill="white"
-						class="bi bi-bell"
-						viewBox="0 0 16 16"
-					>
-						<path
-							d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-						/>
-					</svg>
-				</a>
+				
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
 					<img src="/images/home/profile.jpg" alt="" />
@@ -213,7 +195,7 @@
 				</div>
 
 				<div class="row Feed-Snippet-Interactions Large">
-					<div class="col-sm-3 Feed-Snippet-Like">
+					<div class="col-sm-4 Feed-Snippet-Like">
 						<button class="Like-Button" on:click={like}>
 							{#if liked}
 								<svg
@@ -248,21 +230,8 @@
 							<span class="Like-Counter"> {count}</span>
 						</button>
 					</div>
-					<div class="col-sm-3">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="50"
-							height="50"
-							fill="currentColor"
-							class="bi bi-chat-fill"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"
-							/>
-						</svg>
-					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-sm-4">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="50"
@@ -276,22 +245,7 @@
 							/>
 						</svg>
 					</div>
-					<div class="col-sm-3">
-						<!-- svelte-ignore a11y-click-events-have-key-events -->
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="50"
-							height="50"
-							fill="currentColor"
-							class="bi bi-bookmark-fill {saved ? 'saved' : 'unsaved'}"
-							on:click={handleClick}
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
-							/>
-						</svg>
-					</div>
+					
 				</div>
 			</div>
 		</div>

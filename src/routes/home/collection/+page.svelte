@@ -1,39 +1,18 @@
 <script>
 	// Like Button
-	let count = 0;
+	let count = 1;
 	let liked = false;
 
 	function like() {
 		if (!liked) {
-			count++;
+			count--;
+
 			liked = true;
 		} else {
-			count--;
+			count++;
+
 			liked = false;
 		}
-	}
-
-	//modal1
-	let showModal = false; // state variable to show/hide the modal
-
-	let fullname = ''; // form input value
-	let username = ''; // form input value
-	let email = ''; // form input value
-	let password = ''; // form input value
-
-
-	function handleClickModal() {
-		showModal = true; // show the modal when the image is clicked
-	}
-
-	function closeModal() {
-		showModal = false; // hide the modal when the close button is clicked
-	}
-
-	function handleSubmit() {
-		// do something with the form data
-		console.log(`Name: ${fullname}`);
-		closeModal();
 	}
 </script>
 
@@ -48,40 +27,25 @@
 						width="35"
 						height="35"
 						fill="currentColor"
-						class="bi bi-person"
+						class="bi bi-house-door-fill"
 						viewBox="0 0 16 16"
 					>
 						<path
-							d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+							d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
 						/>
-					</svg> Profile
+					</svg> Home
 				</h4>
+				<div class="Navigation-Switch-Container">
+					<a href="/home" class="btn btn-light Navigation-Switch-Button">Explore Feed</a>
+					<a href="/home/collection" class="btn btn-light Navigation-Switch-Button Active-Button"
+						>Collection</a
+					>
+				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 Navigation-Right-Container">
-				
-
 				<div class="Navigation-Profile-Container">
 					<p class="Navigation-Profile-Username">Dosu_E</p>
-					<img src="/images/home/profile.jpg" alt="" on:click={handleClickModal} />
-					{#if showModal}
-						<div class="modal1" style="color: black;">
-							<div class="modal-content">
-								<span class="close-btn" on:click={closeModal}>&times;</span>
-								<form on:submit|preventDefault={handleSubmit}>
-									<br><br><br>
-									<input type="text" class="mb-3" placeholder="Full Name (Surname First)" id="fullname" bind:value={fullname} required />
-									<input type="text" class="mb-3" placeholder="Username" id="username" bind:value={username} required />
-									<input type="email" class="mb-3" placeholder="Email" id="email" bind:value={email} required />
-									<input type="password" class="mb-3" placeholder="Password" id="password" bind:value={password} required />
-									
-									<div class="btn-group">
-										<button class="btn btn-success" type="submit">Save Changes</button>
-										<button class="btn btn-danger" type="button" on:click={closeModal}>Close</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					{/if}
+					<img src="/images/home/profile.jpg" alt="" />
 				</div>
 				<div
 					class="Navigation-Menu-Toggler"
@@ -123,7 +87,7 @@
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item">
+							<li class="nav-item Active-Link">
 								<a class="nav-link" aria-current="page" href="/home"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +138,7 @@
 									</svg> Add Snippet</a
 								>
 							</li>
-							<li class="nav-item Active-Link">
+							<li class="nav-item">
 								<a class="nav-link" href="/profile"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -192,18 +156,6 @@
 							</li>
 						</ul>
 						<hr />
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/"
-									>
-									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-										<path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-										<path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-									  </svg> LOG OUT </a
-								>
-							</li>
-
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -214,52 +166,10 @@
 	<section class="Feed-Section container-fluid">
 		<div class="row Feed-Container">
 			<div class="col-lg-12 Feed-Snippet-Container">
-				<!-- Button trigger modal -->
-				<button
-					type="button"
-					class="btn btn-danger Delete"
-					data-bs-toggle="modal"
-					data-bs-target="#exampleModal"
-				>
-					Delete
-				</button>
-
-				<!-- Modal -->
-				<div
-					class="modal fade"
-					id="exampleModal"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h1 class="modal-title fs-5" id="exampleModalLabel" style="color:black">
-									Delete Snippet???
-								</h1>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								/>
-							</div>
-							<div class="modal-body" style="color:black">
-								Are you sure you want to delete this snippet
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
-								<button type="button" class="btn btn-danger">Yes, Delete</button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<a href="/profile" class="row Feed-Snippet-Heading-Container">
-					<img src="/images/home/profile.jpg" alt="" />
+				<div class="row Feed-Snippet-Heading-Container">
+					<img src="/images/home/other.jpg" alt="" />
 					<p class="Feed-Snippet-Text-Container">
-						Dosu_E <br /><span
+						Philip_Kobz<br /><span
 							><svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -278,7 +188,7 @@
 							</svg> Just Now</span
 						>
 					</p>
-				</a>
+				</div>
 				<div class="row Feed-Snippet-Details-Container">
 					<h3 class="Feed-Snippet-Title">Worked on this yesterday, blah blah blah</h3>
 					<img src="/images/home/snippets.png" class="Feed-Snippet" alt="" />
@@ -292,7 +202,7 @@
 									xmlns="http://www.w3.org/2000/svg"
 									width="50"
 									height="50"
-									fill="red"
+									fill="white"
 									class="bi bi-heart-fill"
 									viewBox="0 0 16 16"
 								>
@@ -306,7 +216,7 @@
 									xmlns="http://www.w3.org/2000/svg"
 									width="50"
 									height="50"
-									fill="white"
+									fill="red"
 									class="bi bi-heart-fill"
 									viewBox="0 0 16 16"
 								>
@@ -320,6 +230,7 @@
 							<span class="Like-Counter"> {count}</span>
 						</button>
 					</div>
+
 					<div class="col-sm-4">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -334,7 +245,6 @@
 							/>
 						</svg>
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -344,7 +254,7 @@
 <!-- small screen -->
 <main class="Small">
 	<strong
-		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version NOT available</strong
+		>Switch to Desktop, Laptop or Tablet. <br /><br /><br /> Mobile Phone version not AVAILABLE</strong
 	>
 </main>
 
@@ -363,6 +273,27 @@
 		}
 		.Naivgation-Container h4 {
 			display: inline-block;
+		}
+
+		.Navigation-Switch-Container {
+			display: inline-block;
+			margin-left: 2rem;
+			padding: 1rem 1rem;
+			background-color: #0c121d;
+			border-radius: 2rem;
+		}
+		.Navigation-Switch-Button {
+			background-color: #0c121d;
+			border-color: #0c121d;
+			color: white;
+			border-radius: 2rem;
+			margin: 0 0.2rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		.Navigation-Switch-Button.Active-Button {
+			background-color: #1d2a44;
+			color: white;
 		}
 
 		.Navigation-Right-Container {
@@ -385,7 +316,6 @@
 		.Navigation-Profile-Container img {
 			height: 100%;
 			border-radius: 100%;
-			border: 5px solid green;
 		}
 		.Navigation-Profile-Username {
 			display: inline-block;
@@ -433,9 +363,6 @@
 			padding: 3rem;
 			margin-bottom: 4rem;
 		}
-		button.Delete {
-			margin-bottom: 3rem;
-		}
 		.Feed-Snippet-Heading-Container img {
 			width: 7rem;
 			display: inline;
@@ -459,6 +386,7 @@
 		.Feed-Snippet-Interactions {
 			margin-top: 3rem;
 			margin-bottom: 3rem;
+			text-align: center;
 		}
 		.Like-Button svg {
 			margin-right: 5px;
@@ -491,6 +419,27 @@
 			display: inline-block;
 		}
 
+		.Navigation-Switch-Container {
+			display: inline-block;
+			margin-left: 2rem;
+			padding: 0.5rem 0.5rem;
+			background-color: #0c121d;
+			border-radius: 2rem;
+		}
+		.Navigation-Switch-Button {
+			background-color: #0c121d;
+			border-color: #0c121d;
+			color: white;
+			border-radius: 2rem;
+			margin: 0 0.2rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		.Navigation-Switch-Button.Active-Button {
+			background-color: #1d2a44;
+			color: white;
+		}
+
 		.Navigation-Right-Container {
 			text-align: right;
 		}
@@ -509,7 +458,6 @@
 		.Navigation-Profile-Container img {
 			height: 4rem;
 			border-radius: 100%;
-			border: 5px solid green;
 		}
 		.Navigation-Profile-Username {
 			display: inline-block;
@@ -557,9 +505,6 @@
 			padding: 3rem;
 			margin-bottom: 4rem;
 		}
-		button.Delete {
-			margin-bottom: 3rem;
-		}
 		.Feed-Snippet-Heading-Container img {
 			width: 7rem;
 			display: inline;
@@ -583,6 +528,7 @@
 		.Feed-Snippet-Interactions {
 			margin-top: 3rem;
 			margin-bottom: 3rem;
+			text-align: center;
 		}
 
 		.Like-Button svg {
@@ -631,52 +577,5 @@
 
 	.unsaved {
 		fill: white;
-	}
-
-	/* styles for the modal1 */
-	.modal1 {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.modal1 .modal-content {
-		background-color: #fff;
-		padding: 1rem;
-		border-radius: 0.25rem;
-		max-width: 50%;
-		max-height: 90%;
-		overflow-y: auto;
-	}
-
-	.modal1 .close-btn {
-		position: absolute;
-		top: 0.5rem;
-		right: 0.5rem;
-		font-size: 1.5rem;
-		cursor: pointer;
-	}
-
-	.modal1 input {
-		display: block;
-		margin-bottom: 1rem;
-		width: 100%;
-		padding: 0.5rem;
-		border-radius: 0.25rem;
-		border: 1px solid #ccc;
-	}
-
-	.modal1 button {
-		margin-right: 0.5rem;
-	}
-	a{
-		text-decoration: none;
-		color: white;
 	}
 </style>
